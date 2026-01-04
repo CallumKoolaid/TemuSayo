@@ -1,0 +1,66 @@
+{
+  "manufacturer": "CallumKoolaid",
+  "keyboard_name": "temu_sayo",
+  "maintainer": "CallumKoolaid",
+  "development_board": "promicro_rp2040",
+
+  "usb": {
+    "vid": "0xFEED",
+    "pid": "0x0001",
+    "device_version": "1.0.0"
+  },
+
+  "features": {
+    "via": true,
+    "oled": true,
+    "rgblight": true
+  },
+
+  "matrix_pins": {
+    "direct": [
+      ["GP0", "GP1", "GP2", "GP3"]
+    ]
+  },
+
+  "i2c": {
+    "driver": "vendor",
+    "sda": "GP4",
+    "scl": "GP5"
+  },
+
+  "oled": {
+    "driver": "ssd1306",
+    "size": "128x64"
+  },
+
+  "rgblight": {
+    "led_count": 8,
+    "animations": {
+      "breathing": true,
+      "rainbow_mood": true,
+      "rainbow_swirl": true,
+      "snake": true,
+      "knight": true,
+      "christmas": true,
+      "static_gradient": true,
+      "rgb_test": true,
+      "alternating": true,
+      "twinkle": true
+    }
+  },
+  "ws2812": {
+    "driver": "vendor",
+    "pin": "GP16"
+  },
+
+  "layouts": {
+    "LAYOUT": {
+      "layout": [
+        { "matrix": [0, 0], "x": 0, "y": 0, "w": 1, "h": 1 },
+        { "matrix": [0, 1], "x": 1, "y": 0, "w": 1, "h": 1 },
+        { "matrix": [0, 2], "x": 2, "y": 0, "w": 1, "h": 1 },
+        { "matrix": [0, 3], "x": 3, "y": 0, "w": 1, "h": 1 }
+      ]
+    }
+  }
+}
